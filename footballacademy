@@ -1,17 +1,2075 @@
-# Football Academy Welcome Program
+Absolutely. Since we're rebuilding the journey around **your own path**, Batch 2 will continue directly from Batch 1 and keep the **Wallet App + Store App** as the growing project anchors.
 
-academy_name = "Golden Eagles Football Academy"
-player_name = "Marcus Johnson"
-player_position = "Striker"
-jersey_number = 9
-motivational_message = "Believe in yourself, work hard, and greatness will follow!"
+# 🐍 Python Learning Journey
 
-print("=" * 40)
-print(f"Welcome to {academy_name}!")
-print("=" * 40)
-print(f"Player Name     : {player_name}")
-print(f"Position        : {player_position}")
-print(f"Jersey Number   : #{jersey_number}")
-print("-" * 40)
-print(f"Message: {motivational_message}")
-print("=" * 40)
+## Part 1 — Foundations
+
+### Batch 2 — Your First Python Programs
+
+> **Theme:** Turning Problem-Solving Steps into Python Code
+> **Level:** Beginner
+> **Project Track:** 💰 Wallet App + 🛒 Store App
+
+---
+
+# 😎 Welcome Back, Apprentice
+
+In Batch 1, you learned something more important than Python syntax.
+
+You le arned to **think about a problem before coding it**.
+
+You learned:
+
+```text
+INPUT
+  ↓
+PROCESS
+  ↓
+OUTPUT
+```
+
+You also practiced identifying:
+
+* what information a program needs
+* what the program should do with that information
+* what result the user should receive
+
+Now we're going to take that thinking and give it a programming language.
+
+That language is:
+
+# 🐍 PYTHON
+
+This batch is about learning how to give Python simple instructions.
+
+No complicated programs yet.
+
+No functions.
+
+No loops.
+
+No classes.
+
+No shortcuts.
+
+We're going to build the foundation properly.
+
+---
+
+# 🎯 BATCH MISSION
+
+By the end of this batch, you should be able to:
+
+* understand what Python code is doing
+* write a basic Python program
+* use `print()`
+* understand strings
+* understand numbers
+* perform basic arithmetic
+* use comments
+* understand the basic structure of a Python file
+* read simple Python code
+* predict simple outputs
+* translate simple IPO designs into Python
+* build your first tiny Wallet and Store programs
+* run Python programs from your terminal/editor
+
+The goal isn't to memorize syntax.
+
+The goal is:
+
+> **See a simple problem → think through it → write the Python instructions.**
+
+---
+
+# 🧭 WHERE YOU ARE
+
+```text
+🐍 Python Learning Journey
+
+Phase 1 — Python Fluency
+
+Part 1 — Foundations
+
+├── Batch 1 — Thinking Like a Programmer       ✅
+│
+├── Batch 2 — Your First Python Programs       ← YOU ARE HERE
+│
+├── Batch 3 — Variables & Data
+├── Batch 4 — Operators & Expressions
+├── Batch 5 — Input & Output
+├── Batch 6 — Strings
+├── Batch 7 — Conditionals
+├── Batch 8 — Loops
+│
+└── 🏆 Part 1 Boss Fight
+```
+
+---
+
+# 🛠️ SETUP & RUN GUIDE
+
+Before doing the exercises, make sure you can actually run Python.
+
+## 1. Check Python
+
+Open your terminal.
+
+Run:
+
+```bash
+python --version
+```
+
+If that doesn't work, try:
+
+```bash
+python3 --version
+```
+
+You should see something similar to:
+
+```text
+Python 3.x.x
+```
+
+---
+
+# 📁 CREATE YOUR LEARNING FOLDER
+
+Create a folder for your Python journey.
+
+For example:
+
+```text
+python_learning/
+```
+
+Inside it:
+
+```text
+python_learning/
+│
+├── part_1/
+│   │
+│   ├── batch_1/
+│   │
+│   └── batch_2/
+│       ├── hello.py
+│       ├── practice.py
+│       ├── wallet.py
+│       └── store.py
+```
+
+The exact folder structure isn't important yet.
+
+The important thing is developing the habit of keeping your work organized.
+
+---
+
+# ▶️ YOUR FIRST PYTHON FILE
+
+Create:
+
+```text
+hello.py
+```
+
+Write:
+
+```python
+print("Hello, Python!")
+```
+
+Save it.
+
+Then run:
+
+```bash
+python hello.py
+```
+
+Or:
+
+```bash
+python3 hello.py
+```
+
+Expected output:
+
+```text
+Hello, Python!
+```
+
+Congratulations.
+
+You have now given Python an instruction.
+
+---
+
+# 🧠 BIG IDEA #1
+
+## What Is `print()`?
+
+`print()` tells Python:
+
+> **Display something on the screen.**
+
+Example:
+
+```python
+print("Hello")
+```
+
+Output:
+
+```text
+Hello
+```
+
+Another:
+
+```python
+print("Welcome to Python")
+```
+
+Output:
+
+```text
+Welcome to Python
+```
+
+Another:
+
+```python
+print(500)
+```
+
+Output:
+
+```text
+500
+```
+
+---
+
+# 🧩 BREAKING IT DOWN
+
+Look at:
+
+```python
+print("Hello")
+```
+
+There are several pieces.
+
+```text
+print
+  ↓
+the function being called
+
+("Hello")
+  ↓
+the value being given to print
+```
+
+For now, don't worry about the deeper meaning of **functions**.
+
+You'll study functions properly later.
+
+For now:
+
+> `print()` displays information.
+
+---
+
+# 🧪 PRACTICE 1 — FIRST OUTPUT
+
+Write a Python program that prints:
+
+```text
+Welcome to my Python journey.
+```
+
+Then print:
+
+```text
+I am learning to program.
+```
+
+Then:
+
+```text
+Python is my tool.
+```
+
+Your program should produce:
+
+```text
+Welcome to my Python journey.
+I am learning to program.
+Python is my tool.
+```
+
+---
+
+# 🧠 BIG IDEA #2
+
+## Python Executes Instructions
+
+Look at:
+
+```python
+print("First")
+print("Second")
+print("Third")
+```
+
+Python executes the instructions from top to bottom.
+
+Think:
+
+```text
+print("First")
+      ↓
+First
+
+print("Second")
+      ↓
+Second
+
+print("Third")
+      ↓
+Third
+```
+
+This is called **sequential execution**.
+
+For now, your programs mostly run:
+
+```text
+TOP
+ ↓
+DOWN
+```
+
+Later, conditionals and loops will change this flow.
+
+---
+
+# 🧪 PRACTICE 2 — ORDER MATTERS
+
+Write:
+
+```python
+print("Step 1")
+print("Step 2")
+print("Step 3")
+print("Step 4")
+print("Step 5")
+```
+
+Then change the order.
+
+For example:
+
+```python
+print("Step 3")
+print("Step 1")
+print("Step 5")
+print("Step 2")
+print("Step 4")
+```
+
+Observe the output.
+
+Then explain:
+
+> Why did Python print the messages in that order?
+
+---
+
+# 🧠 BIG IDEA #3
+
+# Strings
+
+You will frequently work with text.
+
+Python represents text using strings.
+
+Example:
+
+```python
+"Hello"
+```
+
+Another:
+
+```python
+"Wallet"
+```
+
+Another:
+
+```python
+"Store"
+```
+
+Strings are normally surrounded by quotes.
+
+You can use:
+
+```python
+"Hello"
+```
+
+or:
+
+```python
+'Hello'
+```
+
+For now, choose one style and remain consistent.
+
+---
+
+# 🔤 STRING EXAMPLES
+
+```python
+print("Hello")
+print("Wallet")
+print("Store")
+print("Python")
+```
+
+Output:
+
+```text
+Hello
+Wallet
+Store
+Python
+```
+
+---
+
+# ⚠️ QUOTES MATTER
+
+This:
+
+```python
+print("Hello")
+```
+
+is valid.
+
+But:
+
+```python
+print(Hello)
+```
+
+is not the same thing.
+
+Why?
+
+Because without quotes, Python interprets `Hello` as something other than a string literal.
+
+We'll learn exactly what Python expects there when we introduce variables.
+
+For now remember:
+
+> **Quotes tell Python you're writing text.**
+
+---
+
+# 🧪 PRACTICE 3 — TEXT
+
+Print the following:
+
+```text
+My name is ______.
+I am learning Python.
+I want to build a Wallet App.
+I also want to build a Store App.
+```
+
+Replace the blank with your name.
+
+---
+
+# 🧠 BIG IDEA #4
+
+# Numbers
+
+Python can work with numbers directly.
+
+For example:
+
+```python
+print(10)
+```
+
+Output:
+
+```text
+10
+```
+
+You can also print:
+
+```python
+print(500)
+print(1000)
+print(2500)
+```
+
+---
+
+# 🔢 Numbers vs Text
+
+Look carefully.
+
+```python
+print(500)
+```
+
+versus:
+
+```python
+print("500")
+```
+
+They may look identical when displayed:
+
+```text
+500
+```
+
+But Python treats them differently.
+
+The first is a number.
+
+The second is text.
+
+That distinction will become extremely important.
+
+---
+
+# 🧪 PRACTICE 4 — NUMBER OR TEXT?
+
+Write these:
+
+```python
+print(100)
+print("100")
+print(5000)
+print("5000")
+```
+
+Observe the output.
+
+Then answer:
+
+> Which ones are numbers?
+
+> Which ones are strings?
+
+Don't worry if the output looks identical.
+
+The important difference is how Python **interprets** the values.
+
+---
+
+# 🧠 BIG IDEA #5
+
+# Arithmetic
+
+Python can perform calculations.
+
+Addition:
+
+```python
+print(10 + 5)
+```
+
+Output:
+
+```text
+15
+```
+
+Subtraction:
+
+```python
+print(10 - 5)
+```
+
+Output:
+
+```text
+5
+```
+
+Multiplication:
+
+```python
+print(10 * 5)
+```
+
+Output:
+
+```text
+50
+```
+
+Division:
+
+```python
+print(10 / 5)
+```
+
+Output:
+
+```text
+2.0
+```
+
+---
+
+# 🔢 BASIC OPERATORS
+
+For now:
+
+```text
++   Addition
+-   Subtraction
+*   Multiplication
+/   Division
+```
+
+You'll learn the complete operator system later.
+
+For this batch, focus on the basics.
+
+---
+
+# 💰 WALLET EXAMPLE
+
+Imagine:
+
+```text
+Starting balance = ₦20,000
+Deposit = ₦5,000
+```
+
+The process is:
+
+```text
+20,000 + 5,000
+```
+
+Python:
+
+```python
+print(20000 + 5000)
+```
+
+Output:
+
+```text
+25000
+```
+
+We have now translated part of our IPO design into Python.
+
+---
+
+# 🛒 STORE EXAMPLE
+
+A customer buys:
+
+```text
+4 products
+₦2,000 each
+```
+
+The process:
+
+```text
+2,000 × 4
+```
+
+Python:
+
+```python
+print(2000 * 4)
+```
+
+Output:
+
+```text
+8000
+```
+
+---
+
+# 🧠 IMPORTANT LIMITATION
+
+You might notice something.
+
+This:
+
+```python
+print(2000 * 4)
+```
+
+works.
+
+But the program doesn't know that:
+
+```text
+2000 = product price
+4 = quantity
+8000 = total
+```
+
+Python only sees numbers.
+
+That's okay.
+
+We're deliberately learning one layer at a time.
+
+Soon we'll introduce:
+
+```text
+variables
+```
+
+and the code will become much more meaningful.
+
+---
+
+# 🧪 PRACTICE 5 — WALLET MATH
+
+Write Python code for:
+
+```text
+Starting balance: ₦25,000
+Deposit: ₦10,000
+```
+
+Calculate the new balance.
+
+Expected result:
+
+```text
+35000
+```
+
+Don't use variables yet.
+
+---
+
+# 🧪 PRACTICE 6 — STORE MATH
+
+A customer buys:
+
+```text
+6 products
+₦1,500 each
+```
+
+Write Python code that calculates the total.
+
+Expected result:
+
+```text
+9000
+```
+
+---
+
+# 🧪 PRACTICE 7 — MIXED CALCULATIONS
+
+Write Python code that calculates:
+
+### A
+
+```text
+1000 + 500
+```
+
+### B
+
+```text
+5000 - 1250
+```
+
+### C
+
+```text
+2000 × 7
+```
+
+### D
+
+```text
+10000 ÷ 4
+```
+
+Print each result.
+
+---
+
+# 🧠 BIG IDEA #6
+
+# Comments
+
+Sometimes you need to write notes inside your code.
+
+Python allows comments.
+
+A comment begins with:
+
+```python
+#
+```
+
+Example:
+
+```python
+# This prints a welcome message
+print("Welcome")
+```
+
+Python ignores the comment.
+
+It doesn't execute it.
+
+---
+
+# 🧠 WHY COMMENTS?
+
+Comments can explain:
+
+* what a section does
+* why something exists
+* what you're testing
+* important assumptions
+
+Example:
+
+```python
+# Calculate the customer's total
+print(2000 * 4)
+```
+
+---
+
+# ⚠️ DON'T COMMENT EVERYTHING
+
+Bad:
+
+```python
+# Print hello
+print("Hello")
+```
+
+This isn't harmful, but the comment doesn't add much.
+
+The code already makes the action obvious.
+
+Useful comments usually explain something that isn't immediately obvious.
+
+We'll return to professional documentation later.
+
+---
+
+# 🧪 PRACTICE 8 — COMMENTS
+
+Write a small program containing:
+
+* one comment explaining the program
+* one calculation
+* one printed result
+
+For example, build a simple Store calculation.
+
+---
+
+# 🧠 BIG IDEA #7
+
+# Expressions
+
+This is your first introduction to a very important concept.
+
+Consider:
+
+```python
+2000 * 4
+```
+
+That's an **expression**.
+
+Python evaluates it.
+
+The result is:
+
+```text
+8000
+```
+
+Another:
+
+```python
+10000 + 5000
+```
+
+Result:
+
+```text
+15000
+```
+
+So think:
+
+```text
+Expression
+    ↓
+Python evaluates it
+    ↓
+Result
+```
+
+You'll learn expressions in much greater depth later.
+
+---
+
+# 🧪 PRACTICE 9 — PREDICT FIRST
+
+Before running these:
+
+```python
+print(100 + 50)
+print(1000 - 250)
+print(20 * 5)
+print(100 / 4)
+```
+
+Predict the output.
+
+Then run the program.
+
+Compare:
+
+```text
+Prediction
+    vs
+Actual result
+```
+
+This habit is extremely valuable.
+
+---
+
+# 🧠 PROGRAM READING SKILL
+
+Programming isn't only about writing code.
+
+You must also learn to **read code**.
+
+Consider:
+
+```python
+print(5000 + 2500)
+print(10000 - 3000)
+print(2000 * 4)
+```
+
+Before running it, you should be able to determine:
+
+```text
+7500
+7000
+8000
+```
+
+This is called **tracing/predicting execution**.
+
+We'll practice this throughout the journey.
+
+---
+
+# 🧪 PRACTICE 10 — CODE READING
+
+Predict the output:
+
+```python
+print("Wallet")
+print(10000 + 5000)
+print("Store")
+print(2000 * 3)
+```
+
+Write down your prediction.
+
+Then run it.
+
+---
+
+# 🧠 BIG IDEA #8
+
+# The IPO Model Becomes Code
+
+Remember:
+
+```text
+INPUT
+PROCESS
+OUTPUT
+```
+
+Let's convert a simple Store problem.
+
+## Problem
+
+A customer buys:
+
+```text
+4 products
+₦2,000 each
+```
+
+### INPUT
+
+```text
+Product price = 2000
+Quantity = 4
+```
+
+### PROCESS
+
+```text
+2000 × 4
+```
+
+### OUTPUT
+
+```text
+8000
+```
+
+Now Python:
+
+```python
+print(2000 * 4)
+```
+
+That's the process and output.
+
+Later we'll use variables and input to represent the complete system.
+
+---
+
+# 🛒 MINI BUILD — STORE v0.1
+
+Build a tiny Store program.
+
+Requirements:
+
+Print:
+
+```text
+Welcome to My Store
+```
+
+Then calculate the total for:
+
+```text
+Price = ₦2,000
+Quantity = 4
+```
+
+Then print the result.
+
+Your output can look like:
+
+```text
+Welcome to My Store
+8000
+```
+
+Don't worry about making it pretty yet.
+
+Focus on:
+
+```text
+Problem
+ ↓
+Calculation
+ ↓
+Python
+ ↓
+Output
+```
+
+---
+
+# 💰 MINI BUILD — WALLET v0.1
+
+Build a tiny Wallet program.
+
+Requirements:
+
+Print:
+
+```text
+Welcome to My Wallet
+```
+
+Then calculate:
+
+```text
+Starting balance = ₦20,000
+Deposit = ₦5,000
+```
+
+Print the resulting balance.
+
+Expected result:
+
+```text
+Welcome to My Wallet
+25000
+```
+
+---
+
+# 🧠 IMPORTANT
+
+At this point, you may be tempted to write:
+
+```python
+print("Welcome to My Wallet")
+print(20000 + 5000)
+```
+
+That's perfectly fine.
+
+We're intentionally not using variables yet.
+
+Why?
+
+Because each batch adds another layer.
+
+Current layer:
+
+```text
+Python instructions
+```
+
+Next:
+
+```text
+Variables
+```
+
+Then:
+
+```text
+Operators
+```
+
+Then:
+
+```text
+Input
+```
+
+Then:
+
+```text
+Decision-making
+```
+
+Then:
+
+```text
+Loops
+```
+
+Eventually these pieces combine.
+
+---
+
+# 🥋 DEBUGGING LAB 1
+
+Find the problem:
+
+```python
+print("Welcome to Python"
+```
+
+What is wrong?
+
+Fix it.
+
+Then run the corrected program.
+
+---
+
+# 🥋 DEBUGGING LAB 2
+
+Find the problem:
+
+```python
+print("Wallet)
+```
+
+What is missing?
+
+Fix it.
+
+---
+
+# 🥋 DEBUGGING LAB 3
+
+Find the problem:
+
+```python
+print(10000 +)
+```
+
+Why can't Python execute this?
+
+Fix it.
+
+---
+
+# 🥋 DEBUGGING LAB 4
+
+What is wrong here?
+
+```python
+print("Price:" 2000)
+```
+
+What do you think Python expects between the two pieces?
+
+Don't worry about knowing the complete solution yet.
+
+Think about the structure.
+
+---
+
+# 🧠 DEBUGGING MINDSET
+
+When Python reports an error, don't immediately panic.
+
+Read it.
+
+Ask:
+
+```text
+What line failed?
+
+What was Python trying to do?
+
+What did Python expect?
+
+What did I actually write?
+```
+
+Errors are feedback.
+
+You will see many of them.
+
+That's normal.
+
+---
+
+# 🧪 PRACTICE 11 — BUILD FROM IPO
+
+For each problem:
+
+### Step 1
+
+Write:
+
+```text
+Input:
+Process:
+Output:
+```
+
+### Step 2
+
+Translate the process into Python.
+
+### Problem A
+
+A customer buys 5 notebooks at ₦1,000 each.
+
+### Problem B
+
+A wallet has ₦30,000 and receives a ₦7,500 deposit.
+
+### Problem C
+
+A store sells 3 shirts at ₦8,000 each.
+
+### Problem D
+
+A wallet has ₦50,000 and spends ₦12,000.
+
+Do not jump straight into code.
+
+Design first.
+
+---
+
+# 🔥 CHALLENGE ZONE
+
+Now we're going to remove some of the scaffolding.
+
+---
+
+# 🔥 Challenge 1 — Store Purchase
+
+A customer buys:
+
+```text
+7 products
+₦2,500 each
+```
+
+Your program should calculate the total.
+
+Before writing Python, write:
+
+```text
+Input:
+Process:
+Output:
+```
+
+Then code it.
+
+---
+
+# 🔥 Challenge 2 — Wallet Deposit
+
+A user has:
+
+```text
+₦45,000
+```
+
+They deposit:
+
+```text
+₦17,500
+```
+
+Calculate the new balance.
+
+Again:
+
+```text
+Input:
+Process:
+Output:
+```
+
+Then Python.
+
+---
+
+# 🔥 Challenge 3 — Wallet Withdrawal
+
+A wallet contains:
+
+```text
+₦100,000
+```
+
+The user withdraws:
+
+```text
+₦35,000
+```
+
+Calculate the remaining balance.
+
+---
+
+# 🔥 Challenge 4 — Store Revenue
+
+A store sells:
+
+```text
+12 items
+₦3,500 each
+```
+
+Calculate the total revenue.
+
+---
+
+# 🔥 Challenge 5 — Two Transactions
+
+A wallet starts with:
+
+```text
+₦50,000
+```
+
+Then:
+
+```text
+Deposit ₦20,000
+Withdraw ₦15,000
+```
+
+Calculate the final balance.
+
+Think carefully about the order:
+
+```text
+Starting balance
+        ↓
+Deposit
+        ↓
+New balance
+        ↓
+Withdrawal
+        ↓
+Final balance
+```
+
+---
+
+# 🧨 DEBUGGING CHALLENGE
+
+You receive this program:
+
+```python
+print("Wallet App")
+
+print(30000 + 10000
+
+print("Transaction complete")
+```
+
+Your mission:
+
+1. Find the error.
+2. Fix it.
+3. Predict the output.
+4. Run it.
+5. Compare your prediction with the actual output.
+
+---
+
+# 🧠 CODE READING CHALLENGE
+
+Without running this:
+
+```python
+print("Store")
+print(2500 * 4)
+print("Wallet")
+print(50000 - 12500)
+```
+
+Answer:
+
+### 1.
+
+What is printed first?
+
+### 2.
+
+What is the Store calculation?
+
+### 3.
+
+What is the Wallet calculation?
+
+### 4.
+
+What is the final line of output?
+
+Then run it.
+
+---
+
+# 🧠 MINI PROJECT — WALLET v0.1
+
+Now build the first version of your Wallet App.
+
+## Requirements
+
+Your program should:
+
+1. Print a welcome message.
+2. Start with a balance of ₦50,000.
+3. Add a deposit of ₦20,000.
+4. Subtract a withdrawal of ₦15,000.
+5. Print the final balance.
+
+At this stage, you are allowed to hard-code the numbers.
+
+For example:
+
+```python
+print("Welcome to My Wallet")
+
+print(50000 + 20000 - 15000)
+```
+
+But try to make the program readable.
+
+---
+
+# 🧠 MINI PROJECT — STORE v0.1
+
+Build your first Store App.
+
+Requirements:
+
+1. Print a welcome message.
+2. A customer buys 4 products.
+3. Each product costs ₦2,000.
+4. Calculate the total.
+5. Print the total.
+
+Your basic logic:
+
+```text
+Price × Quantity
+```
+
+But don't simply copy the example.
+
+Build it yourself.
+
+---
+
+# 🥊 MINI PROJECT UPGRADE
+
+Now modify your Store program.
+
+Instead of:
+
+```text
+4 products
+₦2,000 each
+```
+
+choose your own:
+
+```text
+quantity
+price
+```
+
+Then calculate the result.
+
+Do the same for the Wallet App.
+
+Change:
+
+```text
+starting balance
+deposit
+withdrawal
+```
+
+and calculate the new result.
+
+---
+
+# 🧠 REVISION PACK
+
+## `print()`
+
+Displays information.
+
+```python
+print("Hello")
+```
+
+---
+
+## String
+
+Text enclosed in quotes.
+
+```python
+"Hello"
+```
+
+---
+
+## Integer
+
+A whole number.
+
+```python
+500
+```
+
+---
+
+## Arithmetic
+
+Python can calculate:
+
+```python
+10 + 5
+10 - 5
+10 * 5
+10 / 5
+```
+
+---
+
+## Comment
+
+A note Python ignores:
+
+```python
+# This is a comment
+```
+
+---
+
+## Expression
+
+A piece of code Python evaluates to produce a value.
+
+```python
+2000 * 4
+```
+
+Result:
+
+```text
+8000
+```
+
+---
+
+## Sequential Execution
+
+Python normally executes instructions from top to bottom.
+
+```python
+print("A")
+print("B")
+print("C")
+```
+
+Output:
+
+```text
+A
+B
+C
+```
+
+---
+
+# 🧠 COMPREHENSION CHECK
+
+Answer these without looking back.
+
+### 1.
+
+What does `print()` do?
+
+### 2.
+
+What is a string?
+
+### 3.
+
+What's the difference between:
+
+```python
+500
+```
+
+and:
+
+```python
+"500"
+```
+
+### 4.
+
+What does:
+
+```python
+*
+```
+
+represent?
+
+### 5.
+
+What does:
+
+```python
+/
+```
+
+represent?
+
+### 6.
+
+What is a comment?
+
+### 7.
+
+Does Python execute normal instructions from top to bottom?
+
+### 8.
+
+What is an expression?
+
+### 9.
+
+What will this print?
+
+```python
+print(1000 + 500)
+```
+
+### 10.
+
+What will this print?
+
+```python
+print(2000 * 3)
+```
+
+### 11.
+
+What will this print?
+
+```python
+print("Wallet")
+print(50000 - 10000)
+```
+
+### 12.
+
+Why is this different?
+
+```python
+print(500)
+```
+
+versus:
+
+```python
+print("500")
+```
+
+---
+
+# 🥋 SKILL CHECK PREPARATION
+
+Before moving to Batch 3, you should be able to independently:
+
+### Python Basics
+
+* create a `.py` file
+* run it
+* understand basic output
+* read simple Python instructions
+
+### `print()`
+
+You should comfortably use:
+
+```python
+print(...)
+```
+
+### Strings
+
+You should understand:
+
+```python
+"Hello"
+```
+
+### Numbers
+
+You should understand:
+
+```python
+100
+2500
+```
+
+### Arithmetic
+
+You should be able to write:
+
+```python
+10 + 5
+10 - 5
+10 * 5
+10 / 5
+```
+
+### Comments
+
+You should understand:
+
+```python
+# comment
+```
+
+### IPO → Python
+
+You should be able to take:
+
+```text
+Input
+Process
+Output
+```
+
+and translate the process into a basic Python program.
+
+---
+
+# 💰 PROJECT PROGRESS
+
+Your Wallet App currently looks like:
+
+```text
+💰 WALLET APP
+
+Version 0.0
+───────────
+Problem Design
+
+Starting Balance
+Deposit
+Withdrawal
+Final Balance
+
+        ↓
+
+Version 0.1
+───────────
+Basic Python
+
+print()
+Arithmetic
+```
+
+---
+
+# 🛒 PROJECT PROGRESS
+
+Your Store App currently looks like:
+
+```text
+🛒 STORE APP
+
+Version 0.0
+───────────
+Problem Design
+
+Product
+Price
+Quantity
+Total
+
+        ↓
+
+Version 0.1
+───────────
+Basic Python
+
+print()
+Arithmetic
+```
+
+---
+
+# 🌱 GROWTH LOG
+
+After completing the exercises, record:
+
+```text
+## Python — Batch 2 Growth Log
+
+### What clicked for me?
+
+-
+
+### What confused me?
+
+-
+
+### Which exercise was easiest?
+
+-
+
+### Which exercise was hardest?
+
+-
+
+### What error did I encounter?
+
+-
+
+### What did the error teach me?
+
+-
+
+### Can I explain what print() does?
+
+-
+
+### Can I translate a simple IPO design into Python?
+
+-
+
+### What can I build now that I couldn't build before?
+
+-
+
+### Confidence Level
+
+__/10
+
+### What I need to practice more
+
+-
+
+### Next Target
+
+Batch 3 — Variables & Data
+```
+
+---
+
+# 🚪 EXIT CRITERIA
+
+Don't move forward just because you've finished reading.
+
+You should be able to sit down with a simple problem such as:
+
+> A customer buys 8 products at ₦2,500 each.
+
+And naturally think:
+
+```text
+INPUT
+Price = 2500
+Quantity = 8
+
+PROCESS
+2500 × 8
+
+OUTPUT
+20000
+```
+
+Then write Python:
+
+```python
+print(2500 * 8)
+```
+
+Likewise:
+
+> A wallet has ₦40,000 and receives ₦15,000.
+
+You should think:
+
+```text
+INPUT
+Starting balance = 40000
+Deposit = 15000
+
+PROCESS
+40000 + 15000
+
+OUTPUT
+55000
+```
+
+Then translate that into Python.
+
+That is the skill we're building.
+
+---
+
+# 🥷 SENSEI'S FINAL WORD
+
+Don't underestimate this stage.
+
+You're learning something fundamental:
+
+```text
+PROBLEM
+   ↓
+THINK
+   ↓
+BREAK IT DOWN
+   ↓
+WRITE INSTRUCTIONS
+   ↓
+PYTHON
+   ↓
+RUN
+   ↓
+OBSERVE
+   ↓
+DEBUG
+```
+
+This cycle will follow you all the way from:
+
+```text
+print()
+```
+
+to:
+
+```text
+AI systems
+```
+
+The syntax will become more sophisticated.
+
+The fundamental thinking won't.
+
+So don't rush.
+
+Learn to **read code**.
+
+Learn to **predict code**.
+
+Learn to **break problems down**.
+
+Learn to **debug without panicking**.
+
+Then we'll introduce the next weapon:
+
+# 🧠 VARIABLES
+
+That's when Python starts learning how to **remember information**.
+
+🐍 **Next Target → Batch 3: Variables & Data**
